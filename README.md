@@ -1,2 +1,3 @@
-# sentence-encoding-methods
-This project compares several methods for finding similar sentences, including Jaccard similarity, TF-IDF, GloVe, BERT, and RoBERTa.
+# Comparing Sentence Encoding Methods
+
+This project compares several methods for finding similar sentences, including Jaccard similarity, TF-IDF, GloVe, BERT, and RoBERTa. For this application, we are aligning a user question with the step in a recipe that the question is about. For example, at the end of a lasagna recipe the user might ask "How much ricotta cheese should we use?" That question should be aligned with the step where ricotta cheese is discussed. Here, I analyze which method is best able to align questions with steps using manually tagged data from Instructables.com as the test data. Jaccard similarity is able to achieve the highest precision with a strict threshold that only aligns a small portion of the data, while neural methods offer a good balance of precision and alignment percentage.
